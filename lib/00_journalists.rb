@@ -33,4 +33,14 @@ puts "Voici la liste des handles par ordre alphabétique :"
 print journalists.sort
 
 #8
+puts ' '
+puts '_' * 10
+print journalists.sort_by(&:length)[0...49]
+puts ' '
+puts "Ici se trouve la liste des 50 handles les plus courts."
+
+#9
+puts '_' * 10
+puts "Le journaliste @epenser se trouve à la #{journalists.index("@epenser")}ème position dans la liste."
+puts ' '
 puts '_' * 10
